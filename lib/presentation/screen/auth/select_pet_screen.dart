@@ -5,7 +5,7 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:food_quest/routes/app_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-import 'package:food_quest/presentation/screen/auth/completion_pet_screen.dart';
+import 'package:food_quest/presentation/component/button.dart';
 
 @RoutePage()
 class SelectPetScreen extends HookConsumerWidget {
@@ -13,8 +13,7 @@ class SelectPetScreen extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final selectedPet = useState<int?>(null);
-
+    final selectedPet = useState<int>(0);
     return Scaffold(
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -30,7 +29,7 @@ class SelectPetScreen extends HookConsumerWidget {
                     onPressed: () => Navigator.pop(context),
                   ),
                   const Text(
-                    'Back',
+                    '戻る',
                     style: TextStyle(fontSize: 20),
                   ),
                 ],
@@ -53,7 +52,7 @@ class SelectPetScreen extends HookConsumerWidget {
 
             return Padding(
               padding: const EdgeInsets.symmetric(
-                horizontal: 30,
+                horizontal: 20,
                 vertical: 10,
               ),
               child: ElevatedButton(
@@ -61,66 +60,74 @@ class SelectPetScreen extends HookConsumerWidget {
                   selectedPet.value = index;
                 },
                 style: ElevatedButton.styleFrom(
-                  foregroundColor: Colors.black,
                   backgroundColor: Colors.white,
                   shape: RoundedRectangleBorder(
                     side: const BorderSide(width: 0.1),
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(20),
                   ),
+                  padding: EdgeInsets.zero, // Paddingをゼロに設定
                 ),
                 child: Row(
                   children: [
-                    Container(
-                      width: 120,
-                      height: 120,
-                      color: Colors.black,
-                    ),
-                    const SizedBox(width: 10),
-                    Expanded(
-                      child: Column(
-                        children: [
-                          Text('モンスター${index + 1}'),
-                          Text(attributes[index]),
-                        ],
+                    SizedBox(
+                      child: Image.asset(
+                        'assets/images/pet${index + 1}.png',
+                        height: 110,
+                        width: 120,
                       ),
                     ),
-                    if (selectedPet.value == index)
-                      const Positioned(
-                        child: Icon(
-                          Icons.check_circle,
-                          color: Colors.orange,
+                    const SizedBox(width: 30, height: 90),
+                    Row(
+                      children: [
+                        Column(
+                          children: [
+                            Text(
+                              'モンスター${index + 1}',
+                              style: const TextStyle(
+                                color: Colors.black,
+                              ),
+                            ),
+                            Text(
+                              attributes[index],
+                              style: const TextStyle(
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
                         ),
+                      ],
+                    ),
+                    const SizedBox(width: 80, height: 50),
+                    if (selectedPet.value == index)
+                      const Stack(
+                        children: [
+                          Icon(
+                            Icons.check_circle,
+                            color: Colors.orange,
+                          ),
+                        ],
                       ),
                   ],
                 ),
               ),
             );
           }),
-          const SizedBox(height: 40),
+          const SizedBox(height: 140),
           Center(
             child: SizedBox(
               width: 250, // ボタンの横幅を調整
-              child: ElevatedButton(
-                onPressed: selectedPet.value != null
-                    ? () {
-                        context.pushRoute(
-                          CompletionPetRoute(
-                            selectedPet: selectedPet.value!,
-                          ),
-                        );
-                      }
-                    : null,
-                style: ElevatedButton.styleFrom(
-                  foregroundColor: Colors.white,
-                  backgroundColor: selectedPet.value != null
-                      ? Colors.orange
-                      : Colors.grey[300],
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                  padding: const EdgeInsets.symmetric(vertical: 20),
-                ),
-                child: const Text('次へ'),
+              child: CustomButton(
+                text: '次へ',
+                onPressed: () async {
+                  if(context.mounted){
+                    await context.pushRoute(
+                      CompletionPetRoute(
+                        selectedPet: selectedPet.value,
+                        ),
+                    );
+                  }
+                },
+                variant: ButtonVariant.primary,
               ),
             ),
           ),
