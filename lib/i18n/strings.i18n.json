@@ -1,0 +1,108 @@
+{
+  "search": "search",
+  "mailAddress": "mail address",
+  "back": "back",
+  "next": "next",
+  "complete": "complete",
+  "monster": "monster",
+  "cancel": "cancel",
+  "ja": "Japanese",
+  "en": "English",
+  "signIn": "Login",
+  "logOut": "Log Out",
+
+  "pictureErrorDialog":  "No more than three images can be selected",
+
+  "signInScreen": {
+    "welcomeBack": "welcome Back",
+    "email": "email",
+    "emailHint": "Please enter your email address",
+    "password": " password",
+    "passwordHint": "Please enter your password",
+    "passwordCondition": "Between 8 and 12 alphanumeric characters",
+    "signUp": "sign up"
+  },
+
+  "signUpProfileScreen": {
+    "profile": "profile",
+    "userName": "user name",
+    "userNameHint": "Please enter your user name",
+    "address": "address",
+    "toChoicePet": "To Pet Selection"
+  },
+
+  "selectPetScreen": {
+    "message": "Please select your favorite pet",
+    "userNameHint": "Please enter your user name"
+  },
+
+  "newAccount": "new account",
+
+  "completionPetScreen": {
+    "decide": "I decided on you!",
+    "encourage": "Let's complete many quests and raise \n(monster name)!",
+    "start": "Beginning Rokakue"
+  },
+
+  "signUpScreen": {
+    "welcome": "welcome",
+    "emailHint": "Please enter your email address",
+    "passwordHint": "Please enter your password",
+    "passwordCondition": "Between 8 and 12 alphanumeric characters",
+    "clickHere": "Click here if you have an account."
+  },
+
+  "petScreen": {
+    "experience": "experience",
+    "satisfaction": "satisfaction"
+  },
+
+  "translationSelectDescription": "Please select the language you want to translate",
+
+  "profileScreen": {
+    "myAnswer": "My Answer",
+    "review": "Review",
+    "edit": "Edit",
+    "question" : "Question",
+    "good" : "Good"
+  },
+
+  "myAnswerList": "List of questions you have answered",
+
+  "questCard": {
+    "noName": "No Name",
+    "translate": "Translate"
+  },
+
+  "bestAnswer": "Best Answer",
+  "myQuestList":  "My Quest List",
+  "noQuestion":  "No Question",
+  "noAnswer": "No Answer",
+  "searchInMap": "Search in Map",
+  "otherAnswer": "Other Answer",
+  "ExplanationGuideWidget": "You can select up to three prefectures to be displayed on the quest list screen. Quests from the selected prefectures will be displayed.",
+  "receive": "Receive",
+
+  "makeModal": {
+    "acceptingOrder": "Accepting Order",
+    "area": "Area",
+    "dedline": "Deadline",
+    "budget" : "Budget",
+    "message" : "Please enter your answer",
+    "image": "image",
+    "minimumBudget": "Minimum Budget",
+    "maximumBudget": "Maximum Budget"
+  },
+
+  "setting": {
+    "setting": "Setting",
+    "rules": "Rules",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse" : "Terms of Use",
+    "help" : "Help・Feedback",
+    "contact": "Contact Us",
+    "feedback": "Feedback"
+  }
+
+
+}

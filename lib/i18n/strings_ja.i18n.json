@@ -1,0 +1,112 @@
+{
+  "search": "検索",
+  "mailAddress": "メールアドレス",
+  "back": "戻る",
+  "next": "次へ",
+  "complete": "完了",
+  "monster": "モンスター",
+  "cancel": "キャンセル",
+  "ja": "日本語",
+  "en": "英語",
+  "login": "ログイン",
+  "logOut": "ログアウト",
+
+  "pictureErrorDialog": "画像は3枚以上は選択できません",
+
+  "signInScreen": {
+    "welcomeBack": "おかえりなさい",
+    "email": "email",
+    "emailHint": "emailを入力してください",
+    "password": "パスワード",
+    "passwordHint": "パスワードを入力してください",
+    "passwordCondition": "8文字以上12文字以下の半角英数字",
+    "signUp": "はじめての方はこちら"
+  },
+
+  "signUpProfileScreen": {
+    "profile": "プロフィール入力",
+    "userName": "ユーザー名",
+    "userNameHint": "ユーザー名を入力してください",
+    "address": "居住地",
+    "toChoicePet": "ペット選択へ"
+  },
+
+  "selectPetScreen": {
+    "message": "育てるモンスターを選択してください",
+    "userNameHint": "ユーザー名を入力してください"
+  },
+
+  "newAccount": "はじめての方はこちら",
+
+  "completionPetScreen": {
+    "decide": "君に決めた！",
+    "encourage": "たくさんクエストをクリアして\n(モンスター名)を育てよう！",
+    "start": "ロカクエをはじめる"
+  },
+
+  "signUpScreen": {
+    "welcome": "へようこそ",
+    "emailHint": "メールアドレスを入力してください",
+    "passwordHint": "パスワードを入力してください",
+    "passwordCondition": "8文字以上12文字以下の半角英数字",
+    "clickHere": "アカウントをお持ちの方はこちら"
+  },
+
+  "petScreen": {
+    "experience": "経験値",
+    "satisfaction": "満足度"
+  },
+
+  "translationSelectDescription": "翻訳先を選択してください",
+  
+  "profileScreen": {
+    "myAnswer": "自分の回答",
+    "review": "レビュー",
+    "edit": "編集",
+    "question" : "質問",
+    "good" : "いいね"
+  },
+
+  "myAnswerList": "自分が回答した質問一覧画面",
+
+  "questCard": {
+    "noName": "名無し",
+    "translate": "翻訳"
+  },
+
+  "bestAnswer": "ベストアンサー",
+  "myQuestList":  "質問一覧",
+  "noQuestion":  "質問がありません",
+  "noAnswer": "回答がありません",
+  "searchInMap": "Mapで探す",
+  "otherAnswer": "他の回答",
+  "ExplanationGuideWidget": "クエスト一覧画面に表示させる都道府県を最大３個まで選択する事ができます。選択した都道府県のクエストが表示されます。",
+  "receive": "受取",
+
+  "makeModal": {
+    "acceptingOrder": "受注",
+    "area": "エリア",
+    "dedline": "締切日",
+    "budget" : "予算",
+    "message" : "回答内容を入力してください",
+    "image": "画像",
+    "minimumBudget": "最低予算",
+    "maximumBudget": "最高予算"
+  },
+
+  "setting": {
+    "setting": "設定",
+    "rules": "規約",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfUse" : "利用規約",
+    "help" : "ヘルプ・フィードバック",
+    "contact": "お問い合わせ",
+    "feedback": "フィードバック"
+  }
+
+
+
+
+
+
+}

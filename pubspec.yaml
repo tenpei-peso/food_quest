@@ -62,6 +62,9 @@ dependencies:
 
   # 翻訳
   translator: ^0.1.7
+  slang: ^3.26.2
+  flutter_localization: ^0.2.0
+    
 
 dev_dependencies:
   flutter_test:
